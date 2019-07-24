@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>十分钟实现数字增加效果网站</title>
+    <link href="https://fonts.font.im/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+</head>
+<body>
+    <div class="middle">
+        <div class="counting-sec">
+            <div class="inner-width">
+                <div class="col">
+                    <i class="far fa-smile-wink"></i>
+                    <div class="num">1246</div>
+                    Speakers
+                </div>
+
+                <div class="col">
+                    <i class="fas fa-briefcase"></i>
+                    <div class="num">19</div>
+                    Services
+                </div>
+
+                <div class="col">
+                    <i class="far fa-money-bill-alt"></i>
+                    <div class="num">687</div>
+                    Sells
+                </div>
+
+                <div class="col">
+                    <i class="far fa-object-group"></i>
+                    <div class="num">84</div>
+                    Templates
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <script>
+        $(".num").counterUp({delay:10,time:1000});
+    </script>
+</body>
+</html>
