@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>十分钟实现炫酷的更改背景色网站</title>
+    <link href="https://fonts.font.im/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+</head>
+<body>
+    <div class="btn">
+        <i class="fas fa-cog"></i>
+    </div>
+    <div class="box">
+        <h2>Enter a color</h2>
+        <div class="box-c">
+            <div class="txtb">
+                <input type="text" placeholder="#000000" id="hex">
+                <div class="prev"></div>
+            </div>
+            <button class="apply">Apply</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script>
+        // to show and hide the box
+        $('.btn').click(function() {
+            $('.box').toggleClass('box-show');
+        });
+
+        // to have a preview of color
+        $('#hex').keyup(function() {
+            $('.prev').css("background", $('#hex').val());
+        });
+
+        // to apply color
+        $('.apply').click(function() {
+            $('body').css('background', $('#hex').val());
+            // to hide the box after applying the color
+            $('.box').toggleClass('box-show');
+        });
+    </script>
+</body>
+</html>
