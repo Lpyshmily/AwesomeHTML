@@ -31,3 +31,17 @@ CSS：line-height属性（行高）；display属性（设置display为flex后，
 }
 ```
 
+## AV59739071 [五分钟实现类似波浪的加载效果](AV59739071/index.html)
+
+CSS：动画效果的实现（@keyframes创建关键帧/animation调用关键帧名称/设置动画时间、速度曲线、不同动画对象之间的延迟）
+
+```css
+/*使块体位于页面正中央*/
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+```
+
