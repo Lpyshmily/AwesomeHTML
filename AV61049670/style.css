@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* 去除a标签的下划线 */
+    text-decoration: none;
+    font-family: "montserrat", sans-serif;
+}
+
+body {
+    background: #333;
+}
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card {
+    cursor: pointer;
+    width: 360px;
+    height: 480px;
+}
+.front, .back {
+    /* 使内容充满.card框架 */
+    width: 100%;
+    height: 100%;
+    /* 遮挡多余部分 */
+    overflow: hidden;
+    /* 定义当元素不面向屏幕时是否可见 */
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform 0.6s linear;
+}
+
+.front img {
+    width: 100%;
+}
+.front {
+    transform: perspective(600px) rotateY(0deg);
+}
+.back {
+    background: #f1f1f1;
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.back-content {
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+}
+.sm {
+    margin: 20px 0;
+}
+.sm a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    border-radius: 50%;
+}
+.sm a:hover {
+    background: #2c3e50;
+    color: white;
+}
+
+.card:hover > .front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back {
+    transform: perspective(600px) rotateY(0deg);
+}
