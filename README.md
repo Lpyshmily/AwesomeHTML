@@ -45,3 +45,20 @@ CSS：动画效果的实现（@keyframes创建关键帧/animation调用关键帧
 }
 ```
 
+## AV61049670 [十分钟实现鼠标悬浮3D翻转效果网页](AV61049670/index.html)
+
+CSS：text-decoration属性（去除文字装饰，如a标签默认的下划线）；overflow属性（规定当内容溢出元素框时发生的事情）；display属性的值为inline-flex时两个方向的对齐方法（justify-content、align-items）
+
+**重点**：如何用CSS设置翻转效果
+
+```
+父元素 {
+	/* 定义当元素不面向屏幕时是否可见 */
+    backface-visibility: hidden;
+}
+要翻转的内容{
+	/*定义透视高度和翻转角度*/
+	transform: perspective(600px) rotateY(180deg);
+}
+```
+
