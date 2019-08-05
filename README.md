@@ -62,3 +62,6 @@ CSS：text-decoration属性（去除文字装饰，如a标签默认的下划线�
 }
 ```
 
+## AV62031488 [五分钟实现文字流淌效果](AV62031488/index.html)
+
+CSS：复习动画效果的实现（@keyframes创建关键帧/animation调用关键帧名称/设置动画时间、速度曲线、不同动画对象之间的延迟）；背景图片位置、大小、是否重复的设置（background-position/background-size）；background-clip（设置背景图片出现的范围：是否包含边框、只在文字下方出现背景）
