@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+    background: url(Apple_small.jpg) no-repeat;
+    background-size: cover;
+}
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.middle h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #2c3e5036;
+    background: url(wave.jpg);
+    background-clip: text;
+    background-size: 120%;
+    animation: water 1s infinite;
+}
+@keyframes water {
+    from {
+        background-position: -120px 260px;
+    }
+    to {
+        background-position: 0px 260px;
+    }
+}
