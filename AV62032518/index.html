@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>十分钟实现图片模糊效果</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="middle">
+        <div class="box">
+            <img src="Yoona.jpg" class="picture" alt="林允儿盛世美颜">
+            <div class="text">This photo may have a violent content.</div>
+            <button onclick="coverImage()" class="btn">Uncover Image</button>
+        </div>
+    </div>
+
+    <script>
+        var btn = document.querySelector(".btn");
+        var text = document.querySelector(".text");
+        var picture = document.querySelector(".picture");
+        var flag = 0;
+
+        function coverImage() {
+            if(flag == 0) {
+                btn.innerHTML = "Cover Image";
+                text.style.display = "none";
+                picture.style.filter = "blur(0)";
+                flag = 1;
+            }else{
+                btn.innerHTML = "Uncover Image";
+                text.style.display = "block";
+                picture.style.filter = "blur(10px)";
+                flag = 0;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -65,3 +65,21 @@ CSS：text-decoration属性（去除文字装饰，如a标签默认的下划线�
 ## AV62031488 [五分钟实现文字流淌效果](AV62031488/index.html)
 
 CSS：复习动画效果的实现（@keyframes创建关键帧/animation调用关键帧名称/设置动画时间、速度曲线、不同动画对象之间的延迟）；背景图片位置、大小、是否重复的设置（background-position/background-size）；background-clip（设置背景图片出现的范围：是否包含边框、只在文字下方出现背景）
+
+## AV62032518 [十分钟实现图片模糊效果](AV62032518/index.html)
+
+CSS：filter属性（滤镜，可用来实现模糊效果）`filter: blur(10px);`；rgba设置颜色（红、绿、蓝、透明度）；标签内实现事件监听；JS中使用DOM的style方法实现修改标签内容和CSS属性
+
+```html
+<button onclick="coverImage()" class="btn">Uncover Image</button>
+```
+
+```javascript
+var btn = document.querySelector(".btn");
+var text = document.querySelector(".text");
+btn.innerHTML = "Cover Image"; //修改内容
+text.style.display = "none"; //修改CSS属性
+```
+
+
+
