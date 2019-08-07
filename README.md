@@ -81,5 +81,13 @@ btn.innerHTML = "Cover Image"; //修改内容
 text.style.display = "none"; //修改CSS属性
 ```
 
+## AV62541314 [五分钟实现炫酷的加载效果](AV62541314/index.html)
 
+CSS：复习动画效果的实现并设置动画延迟（animation-delay属性）；通过子标签的方法来指定标签（`.obj:n-th-child(2)`）；align-items属性指定flex弹性布局的对齐方式
+
+```css
+.obj:nth-child(2) {
+    animation-delay: 0.1s;
+}
+```
 
