@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>十分钟实现炫酷的商品界面</title>
+    <!-- <link href="https://fonts.font.im/css?family=Montserrat" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="top-section">
+            <img id="image-container" src="Bose_1.jpg" alt="Bose QC35 II">
+            <div class="nav">
+                <img onclick="change_img(this)" src="Bose_1.jpg" alt="第一张">
+                <img onclick="change_img(this)" src="Bose_2.jpg" alt="第二张">
+                <img onclick="change_img(this)" src="Bose_3.jpg" alt="第三张">
+            </div>
+            <div class="price">￥2000</div>
+        </div>
+
+        <div class="product-info">
+            <div class="name">Bose</div>
+            <div class="dis">Awesome Bose QC35 II</div>
+            <a class="btn" href="#">Add to Cart</a>
+        </div>
+    </div>
+
+    <script>
+        var container = document.querySelector("#image-container");
+        function change_img(image) {
+            container.src = image.src;
+        }
+    </script>
+</body>
+</html>

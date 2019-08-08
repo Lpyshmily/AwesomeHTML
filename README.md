@@ -51,7 +51,7 @@ CSS：text-decoration属性（去除文字装饰，如a标签默认的下划线�
 
 **重点**：如何用CSS设置翻转效果
 
-```
+```css
 父元素 {
 	/* 定义当元素不面向屏幕时是否可见 */
     backface-visibility: hidden;
@@ -83,11 +83,19 @@ text.style.display = "none"; //修改CSS属性
 
 ## AV62541314 [五分钟实现炫酷的加载效果](AV62541314/index.html)
 
-CSS：复习动画效果的实现并设置动画延迟（animation-delay属性）；通过子标签的方法来指定标签（`.obj:n-th-child(2)`）；align-items属性指定flex弹性布局的对齐方式
+CSS：复习动画效果的实现并设置动画延迟（animation-delay属性）；通过子标签的方法来指定标签（`.obj:nth-child(2)`）；align-items属性指定flex弹性布局的对齐方式
 
 ```css
 .obj:nth-child(2) {
     animation-delay: 0.1s;
 }
+```
+
+## AV62541085 [十分钟实现炫酷的商品界面](AV62541085/index.html)
+
+CSS：熟练使用CSS中的定位属性；在事件监听中调用参数this表示本身
+
+```html
+<img onclick="change_img(this)" src="Bose_1.jpg" alt="第一张">
 ```
 
